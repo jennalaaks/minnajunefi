@@ -1,0 +1,323 @@
+@font-face {
+    font-family: 'Playlist';
+    src: url(fonts/PlaylistScript.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    src: url(fonts/Poppins-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    src: url(fonts/Poppins-SemiBold.ttf);
+    font-weight: 600;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    overflow-x: hidden;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+a.button {
+    border: none;
+    color: #FFFFFF;
+    padding: 15px 30px;
+    display: inline-block;
+    background-color: #c06f49;
+    border-radius: 50px;
+    vertical-align:middle;
+    display: flex;
+    align-items: center;
+}
+
+body {
+    margin: 0;
+    background-color: FDFDFD;
+}
+
+h2 {
+    font-family: 'Playlist';
+    font-size: 50px;
+    font-weight: 400;
+    margin: 0;
+}
+
+p {
+    margin: 20px 0;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #FDFDFD;
+}
+
+a:hover {
+    opacity: 0.75;
+}
+
+.text-white {
+    color: #FDFDFD;
+}
+
+span.uppercase {
+    text-transform: uppercase;
+}
+
+section {
+    margin: 50px 0;
+}
+
+.wrap {
+    max-width: calc(1300px + 50px);
+    padding: 0 50px;
+    width: 100%;
+    margin: auto;
+}
+
+.flex {
+    width: auto;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 -25px;
+}
+
+.flex-item {
+    flex: 0 1 auto;
+    padding: 0 25px;
+}
+
+.flex-item.vertical-center {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.flex-item.w-50 {
+    width: 50%;
+}
+
+.image {
+    width: 100%;
+    padding-top: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 45px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+section.header {
+    width: 100%;
+    margin: 0;
+    padding: 25px;
+}
+
+section.header > div {
+    background-image: url('images/kimppu.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 885px;
+    position: relative;
+}
+
+section.header h1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    text-align: center;
+    padding: 60px 80px;
+    background-color: #c06f49e0;
+    border-radius: 45px;
+}
+
+section.header h1 .logo {
+    width: 450px;
+    height: auto;
+}
+
+section.header .some-icons {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+section.courses > .flex > .flex-item.vertical-center {
+    display: flex;
+}
+
+section.workspace {
+    background-color: #F8F2F0;
+    text-align: center;
+    padding: 50px 0;
+    margin-bottom: 0;
+}
+
+section.workspace p {
+    margin-bottom: 50px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section.workspace .image {
+    padding-top: 125%;
+}
+
+footer {
+    padding: 50px 0;
+    background-color: #c06f49;
+    text-align: center;
+}
+
+footer .image {
+    border-radius: 350px;
+    padding: 0;
+    width: 320px;
+    height: 320px;
+    margin: 25px 0;
+}
+
+footer address {
+    text-align: right;
+    font-style: normal;
+}
+
+footer .flex-item:first-of-type {
+    border-right: 1.5px solid #FDFDFD;
+}
+
+footer .logo {
+    width: 325px;
+    height: auto;
+    margin: 0 auto 50px auto;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.some-icon {
+    width: 35px;
+    height: 35px;
+}
+
+.some-icon:first-of-type {
+    margin-right: 7.5px;
+}
+
+@media all and (max-width: 1300px) {
+
+    section.header > div {
+        height: 650px;
+    }
+
+}
+
+@media all and (max-width: 885px) {
+
+    section.header {
+        padding: 15px;
+    }
+
+    section.header > div {
+        height: 500px;
+    }
+
+    section.header h1 {
+        padding: calc(60px * 0.5) calc(80px * 0.5);
+        border-radius: calc(45px * 0.5);
+    }
+
+    section.header h1 .logo {
+        width: calc(400px * 0.5);
+    }
+
+    .wrap {
+        padding: 0 15px;
+    }
+
+    .flex {
+        margin: 0;
+    }
+
+    .flex-item.w-50 {
+        width: 100%;
+        padding: 0;
+    }
+
+    .mobile-order-1 {
+        order: 1;
+        margin-bottom: 30px;
+    }
+
+    .mobile-order-2 {
+        order: 2;
+    }
+
+    section.courses {
+        text-align: center;
+    }
+
+    section.courses ul li {
+        text-align: left;
+    }
+
+    section.workspace .flex-item:first-of-type {
+        margin-bottom: 50px;
+    }
+
+    footer address {
+        text-align: center;
+    }
+
+    footer .flex-item:first-of-type {
+        border: none;
+    }
+
+    footer .image {
+        margin: 25px auto 0 auto;
+    }
+
+}
+
+@media all and (max-width: 420px) {
+
+    footer .logo {
+        width: 250px;
+    }
+    footer .image {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media all and (max-width: 360px) {
+
+    section.header h1 {
+        padding: calc(60px * 0.4) calc(80px * 0.4);
+        border-radius: calc(45px * 0.4);
+    }
+
+    section.header h1 .logo {
+        width: calc(400px * 0.4);
+    }
+
+}
